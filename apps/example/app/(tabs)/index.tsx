@@ -1,9 +1,9 @@
-import { Image, Platform, StyleSheet } from 'react-native';
+import { Button, ContextMenu } from '@expo/ui/swift-ui';
+import { Image, StyleSheet } from 'react-native';
+import WebView from 'react-native-webview';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import WebView from 'react-native-webview';
 
 export default function HomeScreen() {
   return (
@@ -16,29 +16,35 @@ export default function HomeScreen() {
         />
       }
     >
-      <ThemedText type="subtitle">Webview Test</ThemedText>
+      <ThemedText type="subtitle">Webview Test ❌</ThemedText>
       <WebView source={{ uri: 'https://www.appjs.co' }} style={{ height: 150 }} />
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
+      <ThemedText type="subtitle">Expo UI Button Test ✅</ThemedText>
+      <Button
+        systemImage="person.crop.circle.badge.xmark"
+        onPress={() => console.log('Pressed1')}
+        variant="bordered"
+      >
+        Working Great Button
+      </Button>
+      <ThemedText type="subtitle">Context Menu Test ❌</ThemedText>
+      <ContextMenu style={{ width: 150, height: 50 }}>
+        <ContextMenu.Items>
+          <Button
+            systemImage="person.crop.circle.badge.xmark"
+            onPress={() => console.log('Pressed1')}
+          >
+            Hello
+          </Button>
+          <Button variant="bordered" systemImage="heart" onPress={() => console.log('Pressed2')}>
+            Love it
+          </Button>
+        </ContextMenu.Items>
+        <ContextMenu.Trigger>
+          <Button variant="bordered" style={{ width: 150, height: 50 }}>
+            Show Menu
+          </Button>
+        </ContextMenu.Trigger>
+      </ContextMenu>
     </ParallaxScrollView>
   );
 }

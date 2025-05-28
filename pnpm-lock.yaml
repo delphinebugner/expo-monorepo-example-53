@@ -20,6 +20,9 @@ importers:
       '@acme/feature-home':
         specifier: workspace:*
         version: link:../../packages/feature-home
+      '@expo/ui':
+        specifier: 0.1.1-alpha.7
+        version: 0.1.1-alpha.7(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
       '@expo/vector-icons':
         specifier: ^14.1.0
         version: 14.1.0(expo-font@13.3.1(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
@@ -171,7 +174,7 @@ importers:
         version: 29.7.0(@types/node@22.13.10)
       jest-expo:
         specifier: ~53.0.4
-        version: 53.0.4(@babel/core@7.26.10)(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(jest@29.7.0(@types/node@22.13.10))(react-dom@19.0.0(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)(webpack@5.98.0(esbuild@0.25.1))
+        version: 53.0.4(@babel/core@7.26.10)(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(jest@29.7.0(@types/node@22.13.10))(react-dom@19.0.0(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)(webpack@5.98.0)
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -216,7 +219,7 @@ importers:
         version: 29.7.0(@types/node@22.13.10)
       jest-expo:
         specifier: ~53.0.4
-        version: 53.0.4(@babel/core@7.26.10)(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(jest@29.7.0(@types/node@22.13.10))(react-dom@19.0.0(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)(webpack@5.98.0)
+        version: 53.0.4(@babel/core@7.26.10)(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(jest@29.7.0(@types/node@22.13.10))(react-dom@19.0.0(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)(webpack@5.98.0(esbuild@0.25.1))
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -977,6 +980,13 @@ packages:
   '@expo/spawn-async@1.7.2':
     resolution: {integrity: sha512-QdWi16+CHB9JYP7gma19OVVg0BFkvU8zNj9GjWorYI8Iv8FUxjOCcYRuAmX4s/h91e4e7BPsskc8cSrZYho9Ew==}
     engines: {node: '>=12'}
+
+  '@expo/ui@0.1.1-alpha.7':
+    resolution: {integrity: sha512-MJE86BYuABY9ZBc//MLMNKE8vV+s6v0yA5VPUeF1TMmJumqXJkshjwFJ3pXuJ6UjiNe+QDTOgTnTtvWQ+mJYsQ==}
+    peerDependencies:
+      expo: '*'
+      react: '*'
+      react-native: '*'
 
   '@expo/vector-icons@14.1.0':
     resolution: {integrity: sha512-7T09UE9h8QDTsUeMGymB4i+iqvtEeaO5VvUjryFB4tugDTG/bkzViWA74hm5pfjjDEhYMXWaX112mcvhccmIwQ==}
@@ -6074,6 +6084,12 @@ snapshots:
   '@expo/spawn-async@1.7.2':
     dependencies:
       cross-spawn: 7.0.6
+
+  '@expo/ui@0.1.1-alpha.7(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      expo: 53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+      react: 19.0.0
+      react-native: 0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
 
   '@expo/vector-icons@14.1.0(expo-font@13.3.1(expo@53.0.6(@babel/core@7.26.10)(@expo/metro-runtime@5.0.4(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)))(react-native-webview@13.13.5(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react@19.0.0))(react-native@0.79.2(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)':
     dependencies:

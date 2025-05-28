@@ -17,11 +17,11 @@
 
 <br />
 
-## This is a repro for blank webview
+## This is a repro for blank webview and unworking context menu in an isolated monorepo
 
 See below
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## ⚡ Why is it fast?
 
