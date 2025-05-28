@@ -1,9 +1,9 @@
-import { HomeMessage, HomeMessageIcon } from '@acme/feature-home';
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, Platform, StyleSheet } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import WebView from 'react-native-webview';
 
 export default function HomeScreen() {
   return (
@@ -16,14 +16,8 @@ export default function HomeScreen() {
         />
       }
     >
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText>
-          <HomeMessage />
-        </ThemedText>
-        <ThemedText>
-          <HomeMessageIcon />
-        </ThemedText>
-      </ThemedView>
+      <ThemedText type="subtitle">Webview Test</ThemedText>
+      <WebView source={{ uri: 'https://www.appjs.co' }} style={{ height: 150 }} />
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
